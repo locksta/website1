@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {margin: 0;}
+    div#wrapper {margin-top: 0px;width: 900px;height: 500px;background-color: antiquewhite;}
+    header {margin-bottom: 0px;padding-top: 10px;}
+    header img{float: left;}
+    nav ul {padding: 10px;border-top: solid red 1px;border-bottom: solid red 1px; list-style: non;text-align: center;margin-bottom: 0px;}
+    nav ul li{display: inline;padding: 16.5fx;}
+    nav ul li a{text-decoration: none;color: black; letter-spacing: 8px;}
+               a:hover {color: white;}
+
+    aside{float: left;width: 180px;}
+    section{float: left;width: 420px;height: 300px;margin: 10px 10px 0px;border-left: solid 3px grey; border-top: solid 3px grey;}
+    article{float: left;border: solid red 1px;width: 300px; margin-top: 7px;}
+    div#article {margin-left: 7px;}
+
+    div#content{font-size: small;}
+    aside#left ul{padding: 0px;}
+    aside#left ul li{padding: 5px;border-bottom: 1px solid black; list-style: none;background-color: #333338;}
+    aside#left ul li a{padding: 10px;text-decoration: none; color: white;}
+    aside#left ul li :hover{background-color: red;}
+    aside#right {margin-top: 0px;}
+    footer{clear: both; text-align: center;}
+    
+
+   
+</style>
+<body>
+    <header>
+        <h1><img src="/images_all/apple.jpeg" width="60" height="60"><a href="index.html">
+            web shop</a></h1>      
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contantacts</a></li>
+        </ul>
+    </nav>
+
+    <aside id="left">
+        <h4>카테고리</h4>
+        <ul>
+        <li><a target="ifram1" href="computer.htm">컴퓨터</a></li>
+        <li><a target="ifram1" href="clothing.htm">의류</a></li>
+        <li><a target="ifram1" href="music.htm">음악</a></li>
+        <li><a target="ifram1" href="movie.htm">영화</a></li>
+        <li><a target="ifram1" href="computer.htm">스포츠/레저</a></li>
+        <li><a target="ifram1" href="computer.htm">가구/인터레어</a></li>
+        <li><a target="ifram1" href="computer.htm">식품</a></li>
+        </ul>
+    </aside>
+
+    <section id="main">
+        <article id="article">
+            <iframe name="iframe1" src="computer.html" width="300" seamless></iframe>
+            <p>심플하고 슬림한 본체에 코어 i5 3470과 지포스 GT630을 장착CPU:인털코어i5
+                3470(아이비브릿지3세대)사용가격:1,200,000원</p><br>
+                <a href="index.html">쇼핑카트추가하기</a>
+            </p>
+            <iframe name="iframe2" src="note book.html" width="300" seamless></iframe>
+            <p>FULL-HD로 선명한 화면,ISP패널로 시야각도 좋다! CPU:인텔 코어i7 3630 QM,CPU:인텔코어ㅑ7
+                3630 QM 가격:1,200,000원</p><br>
+            <a href="index.html">쇼핑카트추가하기</a>
+        </article>
+    
+    </section>
+
+    <aside id="light">
+        <h4>Shopping Cart</h4>
+        <p>현재 쇼핑카트에 물품이 없습니다</p>
+        <a href="index.html">쇼핑카트보기</a>
+
+        <h4>Log in</h4>
+        <div id="page-wrp">
+            <form method="post" action="process.jsp">
+                <p>아이디</p>
+                <input type="name" name="아이디"/>
+                <p>패스워드</p>
+                <input type="password" name="패스워드"/><br>
+                <input type="submit" name="submit" value="로그인"/>
+                <input type="reset" name="reset" value="초기화"/><br>
+                <a href="index.html">회원가입</a>
+                <a href="index.html">비밀번호분실</a>
+            </form>
+        </div>
+    </form>
+    </aside>
+
+    <footer>
+        copyright(c) 2023 Web Shop
+    </footer>
+
+
+    
+</body>
+</html>
